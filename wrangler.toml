@@ -1,0 +1,16 @@
+type = "webpack"
+account_id = "dc56444c4c955a1653106ccf997c1067"
+webpack_config = "webpack.config.js"
+workers_dev = true
+
+[env.dev]
+name = "convertkit-graphql-api-dev"
+vars = {
+  WORKERS_ENV = "development"
+}
+
+[env.prod]
+name = "convertkit-graphql-api"
+vars = {
+  WORKERS_ENV = "production"
+}
